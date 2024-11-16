@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Canciones Paginada</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="sources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="sources/soulicon.png" alt="Icono SoulHowler" class="logo-icon">
+        <h1>Lista de Canciones disponibles en el Clone Hero</h1>
+        <h3>Si la canción que deseas no se encuentra en la lista puedes solicitarla en el canal de #clone-hero en el <a href="https://discord.gg/kT2Um7sb3q" target="_blank">Servidor de Discord</a> </h3>
+        
+    </header>
+    <div class="table-container">
+        <table id="songsTable">
+            <thead>
+                <tr>
+                    <th>Nombre de la Canción</th>
+                    <th>Artista</th>
+                </tr>
+            </thead>
+            <tbody id="songsBody">
+                <!-- Las canciones se cargarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination">
+        <button id="prevBtn">Anterior</button>
+        <span id="pageInfo"></span>
+        <button id="nextBtn">Siguiente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

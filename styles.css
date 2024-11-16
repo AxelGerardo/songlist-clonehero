@@ -1,0 +1,127 @@
+/* AQUI ESTAN LOS ESTILOS MUAJAJAJA */
+body {
+    font-family: Arial, sans-serif;
+    background: url('sources/background-img.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    width: 160px;
+    height: 160px;
+    border-radius: 14px;
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Título */
+h1 {
+    color: #ffffff;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+h3 {
+    color: #ffffff;
+    font-size: 0.8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    overflow-x: auto;
+}
+
+/* Estilo de la tabla  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #d3d3d359; 
+    border: 2px solid #ffffff; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado de la tabla */
+thead th {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ffffff; 
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 12px;
+    text-align: left;
+    color: #000000;
+    background-color: #d3d3d370; 
+    border-bottom: 1px solid #ffffff; 
+}
+
+/* Filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #c0c0c03a; 
+}
+
+/* Botones de paginación */
+.pagination {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #777777;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #525252;
+}
+
+button:disabled {
+    background-color: #ffffff;
+    cursor: not-allowed;
+}
+
+/* Información de la página */
+#pageInfo {
+    font-weight: bold;
+    color: #fff;
+}
